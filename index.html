@@ -1,39 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
     <title>Tech-Wave</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <nav class="flex justify-around h-[90px]  items-center bg-[#412567] text-white mx-auto">
-        <h1 class="cursor-pointer text-3xl font-bold">Tech<span class="text-3xl font-bold 
-           bg-gradient-to-r 
-           from-[#F7E93F] 
-           via-[#FB09B4] 
-           to-[#9100F8] 
-           bg-clip-text 
-           text-transparent">Wave</span></h1>
-        <ul class=" gap-7  sm:flex hidden ">
-            <li class="cursor-pointer">About</li>
-            <li class="cursor-pointer">Episodes</li>
-            <li class="cursor-pointer">Host</li>
-        </ul>
-        <button class="hidden sm:block cursor-pointer bg-gradient-to-r 
-           from-[#F7E93F] 
-           via-[#FB09B4] 
-           to-[#9100F8] py-3 px-4 rounded-[10000px] hover:bg-gradient-to-l ">Subscribe</button>
-           <span class="block sm:hidden"><img src="./assets/hamburger-menu.png" alt=""></span>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <!-- nav section -->
+    <nav
+      class="flex justify-around h-[90px] items-center bg-[#0d0221] text-white mx-auto"
+    >
+      <h1 class="cursor-pointer text-3xl font-bold">
+        Tech<span
+          class="text-3xl font-bold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent"
+          >Wave</span
+        >
+      </h1>
+      <ul class="gap-7 sm:flex hidden">
+        <li class="cursor-pointer">About</li>
+        <li class="cursor-pointer">Episodes</li>
+        <li class="cursor-pointer">Host</li>
+      </ul>
+      <button
+        class="hidden sm:block cursor-pointer bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-3 px-4 rounded-[10000px] hover:bg-gradient-to-l"
+      >
+        Subscribe
+      </button>
+      <span class="block sm:hidden"
+        ><img src="./assets/hamburger-menu.png" alt=""
+      /></span>
     </nav>
-  
+     <!-- hero section -->
+    <section
+      class="relative min-h-screen flex flex-col items-center justify-center bg-[#0d0221] text-white overflow-hidden"
+    >
+      <div class="absolute inset-0 z-0 opacity-50">
+        <img
+          src="./assets/hero-bg.png"
+          alt="Background"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <div class="relative z-10 flex flex-col items-center text-center px-4">
+        <div class="relative mb-8 group">
+          <span
+            class="absolute top-4 right-4 bg-green-500 text-black text-[10px] font-bold px-3 py-1 rounded-full z-20"
+          >
+            NEW
+          </span>
+
+          <div class="w-48 h-48 relative flex items-center justify-center">
+            <img
+              src="./assets/hero-circle.png"
+              alt="Gradient Circle"
+              class="absolute inset-0 w-full h-full animate-pulse-slow"
+            />
+
+            <img
+              src="./assets/microphone.png"
+              alt="Microphone"
+              class="relative z-10 w-24 h-24 md:w-32 md:h-32 object-contain"
+            />
+          </div>
+        </div>
+
+        <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-4">
+          Tech<span class="text-white">Wave</span>
+        </h1>
+        <p
+          class="text-white max-w-lg text-sm md:text-base mb-10 leading-relaxed"
+        >
+          Your daily dose of tech insights, productivity hacks, and personal
+          growth.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="#"
+            class="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-full font-semibold hover:scale-105 transition-transform duration-300"
+          >
+            <img src="./assets/spotify.png" alt="" />
+            Listen On Spotify
+          </a>
+
+          <a
+            href="#"
+            class="flex items-center gap-2 px-8 py-3 text-green-600 border border-green-600 rounded-full font-semibold hover:bg-green-500/30 transition-colors duration-300">
+            <img src="./assets/message.png" alt="" />
+            Subscribe
+          </a>
+        </div>
+      </div>
+    </section>
 
 
 
-</body>
+
+
+
+    
+  </body>
 </html>
